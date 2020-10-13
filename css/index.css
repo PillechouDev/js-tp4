@@ -1,0 +1,28 @@
+
+
+
+
+
+/*
+En fonction de l'état une couleur sera appliqué
+*/
+
+.etat[value^="EN SERVICE"]{
+    color : green
+}
+.etat[value^="HORS SERVICE"]{
+    color : red
+}
+
+.etat[value^="EN MAINTENANCE"]{
+    color : yellow
+}
+
+
+
+/*
+Si le nombre de vélo est à 0 donc c'est en rouge 
+*/
+.nbvelo[value^="0"]{
+    color : red
+}
