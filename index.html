@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V'Lille</title>
+    <script  defer src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">V'lille</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">V'lille <span class="sr-only">(current)</span></a>
+                </li>
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <center>
+        
+            <form id="formu">
+                <input class="form-control" type="text" name="search" id="search" placeholder="Rechercher une station" minlength="3" maxlength="50" required>
+                <button  class="btn btn-primary" type="submit" >Rechercher</button>
+            </form>
+    </center>
+    
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Commune</th>
+                    <th>Nom de la station</th>
+                    <th>En service</th>
+                    <th>Vélos disponible</th>
+                    <th>Places disponible</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+    </div>
+</body>
+
+</html>
