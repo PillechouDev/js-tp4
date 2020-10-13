@@ -4,11 +4,9 @@
 document.getElementById('formu').addEventListener('submit', searchByCity);
 
 
-
 async function searchByCity(event){
     //Fucntion permetant de rechercher par ville dans l'api de la métropole lilloise
     event.preventDefault(); //pemet de suprimer le comportement par défault
-
     const ville = document.getElementById('search').value;
     //Try catch permettant de catch les erreur en cas d'echec du try
     try{
@@ -39,18 +37,13 @@ async function searchByCity(event){
                 case(error<600):
                     alert('Une erreur est survenue coté serveur, veuillez réessayer plus tard');
                     break;
-
             }
         }
-        
-        
-
     }
     catch(e) {
         console.error(e);
     }
 }
-
 function newLign(commune,nom,etat,nbVeloDispo,nbPlaceDispo){
     
     //Création d'une nouvelle ligne avec tout les élément nécessaire 
