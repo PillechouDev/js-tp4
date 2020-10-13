@@ -57,7 +57,7 @@ function newLign(commune,nom,etat,nbVeloDispo,nbPlaceDispo){
 
     const body=document.getElementById('table-body');
     const lign=document.createElement('tr');
-    body.appendChild(lign);
+    body.appendChild(lign); //Ajout de d'un element enfant avec lign
     lign.innerHTML+=`<td>${commune}</td>`;
     lign.innerHTML+=`<td>${nom}</td>`;
     lign.innerHTML+=`<td value='${etat}' class='etat'>${etat}</td>`;
